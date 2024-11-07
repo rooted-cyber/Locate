@@ -28,7 +28,8 @@ seek()
 	fi
 		cd ~/.config/ngrok
 		if [ -e ngrok.yml ];then
-		python3 ~/Locate/seeker/seeker.py
+		cd ~/Locate/seeker
+                python3 seeker.py
 		else
 		msg First add ngrok token 
 		exit
